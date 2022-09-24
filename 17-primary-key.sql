@@ -2,7 +2,7 @@
 -- DROP TABLE employers;
 -- DROP TABLE conversations;
 
-CREATE TYPE emplyment_status AS ENUM('self-employed', 'employed', 'unemployed');
+CREATE TYPE employment_status AS ENUM('self-employed', 'employed', 'unemployed');
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
