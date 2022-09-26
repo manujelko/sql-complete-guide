@@ -1,0 +1,1 @@
+CREATE index multiaddr ON addresses (street, city);
