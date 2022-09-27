@@ -19,6 +19,11 @@
 -- SELECT * FROM locations AS loc
 -- LEFT JOIN events AS e ON e.location_id = loc.id;
 
+-- SELECT * FROM cities AS c
+-- LEFT JOIN locations AS loc ON loc.city_name = c.name
+-- LEFT JOIN events AS e ON e.location_id = loc.id;
+
 SELECT * FROM cities AS c
 LEFT JOIN locations AS loc ON loc.city_name = c.name
-LEFT JOIN events AS e ON e.location_id = loc.id;
+LEFT JOIN events AS e ON e.location_id = loc.id
+WHERE c.name = 'Munich';
