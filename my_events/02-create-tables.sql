@@ -4,6 +4,6 @@ CREATE TABLE events (
 	date_planned TIMESTAMP NOT NULL,
 	image VARCHAR(300),
 	description TEXT NOT NULL,
-	max_participatns INT CHECK (min_age > 0),
+	max_participants INT CHECK (min_age > 0),
 	min_age INT CHECK (min_age > 0)
 );
